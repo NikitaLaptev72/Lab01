@@ -13,7 +13,6 @@ for ColumnsName in SearchBuildingClassCategory:
     SearchResult.to_csv(str(ColumnsName).replace("/"," ") + '.csv')
 
 print('Подсчет значений....')  
-#Выборка столбцов, в которых есть числа
 ColumnsName = data.select_dtypes(include='number').columns
 for Columns in ColumnsName:
     print('Столбец - ' + Columns)
